@@ -1,0 +1,40 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+const toc = headings.filter((h) => h.depth <= 3);
+const fmt = (d: Date) =>
+  d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+---
+<Base title={post.data.title ?? post.id} wide={toc.length > 0}>
+  <div class={toc.length > 0 ? 'post-layout' : ''}>
+    {toc.length > 0 && (
+      <nav class="post-toc" aria-label="Contents">
+        <details>
+          <summary>Contents</summary>
+          <ol>
+            {toc.map((h) => (
+              <li class={`toc-d${h.depth}`}><a href={`#${h.slug}`}>{h.text}</a></li>
+            ))}
+          </ol>
+        </details>
+      </nav>
+    )}
+    <article class="prose">
+      {post.data.title && <h1>{post.data.title}</h1>}
+      {post.data.date && <p class="meta"><time datetime={post.data.date.toISOString()}>{fmt(post.data.date)}</time></p>}
+      <Content />
+    </article>
+  </div>
+</Base>
+
+<script>
+  import '../../scripts/toc.js';
+</script>

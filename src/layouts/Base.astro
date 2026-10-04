@@ -1,0 +1,31 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  wide?: boolean;
+}
+const { title, wide = false } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const path = Astro.url.pathname;
+const onBlog = path.startsWith(`${base}/blog`) || path.startsWith(`${base}/stories`);
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title ? `${title} · Emma Jin` : 'Emma Jin'}</title>
+  </head>
+  <body>
+    <header class={wide ? 'site-header wide' : 'site-header'}>
+      <nav>
+        <a href={`${base}/`} aria-current={!onBlog ? 'page' : undefined}>About</a>
+        <a href={`${base}/blog`} aria-current={onBlog ? 'page' : undefined}>Blog</a>
+      </nav>
+    </header>
+    <main class={wide ? 'wide' : ''}>
+      <slot />
+    </main>
+  </body>
+</html>

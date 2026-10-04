@@ -1,0 +1,31 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import '../../styles/annotations.css';
+
+export async function getStaticPaths() {
+  const stories = await getCollection('stories');
+  return stories.map((story) => ({ params: { slug: story.id }, props: { story } }));
+}
+
+const { story } = Astro.props;
+const { Content } = await render(story);
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base title={story.data.title ?? story.id} wide>
+  <div class="story-toolbar">
+    <a href={`${base}/blog`} onclick="if (history.length > 1 && document.referrer.startsWith(location.origin)) { history.back(); return false; }">← Back</a>
+    <button id="toggle-comments" class="toggle-comments" type="button" aria-pressed="true">Hide comments</button>
+  </div>
+  <article id="story" class="story prose">
+    <div class="story-body">
+      {story.data.title && <h1>{story.data.title}</h1>}
+      <Content />
+    </div>
+    <svg class="ann-connectors" aria-hidden="true"></svg>
+  </article>
+</Base>
+
+<script>
+  import '../../scripts/annotations.js';
+</script>
