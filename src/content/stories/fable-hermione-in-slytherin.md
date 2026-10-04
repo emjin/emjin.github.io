@@ -92,7 +92,7 @@ Later, the silence would become famous. **Hufflepuffs who had been examining the
 
 She took the Hat off and set it neatly on the stool. **Her hands were steady. That took everything she had, so her face was on its own, and she suspected it had gone the color of a fire alarm. \[+prose: I like the way this intersperses characterization and description\]**
 
-Professor McGonagall was staring at her with the expression of a woman rerunning a calculation. At the Gryffindor table, the boy with the scar — Harry Potter, **sorted twenty minutes prior \[canon-cont: again, Potter would have come after Granger\]** — was watching her with open confusion. **Beside him, a redheaded boy whispered something \[canon-cont: Ron Weasley definitely shouldn’t have been sorted yet.\]**. She was too far away to hear it. She would spend an unreasonable number of the next several years not-wondering what it was.
+Professor McGonagall was staring at her with the expression of a woman rerunning a calculation. At the Gryffindor table, the boy with the scar — Harry Potter, **sorted twenty minutes prior \[canon-cont: again, Potter would have come after Granger\]** — was watching her with open confusion. **Beside him, a redheaded boy whispered something \[canon-cont: Ron Weasley definitely shouldn’t have been sorted yet. I particularly don't like this one because it's already odd that Hermione would notice Ron whispering something and spend years thinking about it; their only interaction at this point is a few minutes of conversation on the train\]**. She was too far away to hear it. She would spend an unreasonable number of the next several years not-wondering what it was.
 
 The Slytherin table did not applaud.
 
