@@ -5,12 +5,12 @@
 You need Node.js 20 or newer (`node -v` to check; install from https://nodejs.org or `brew install node`).
 
 ```sh
-cd ~/Claude/Projects/PersonalWebsite
+cd ~/Documents/PersonalWebsite
 npm install        # first time only
 npm run dev        # then open http://localhost:4321
 ```
 
-The dev server reloads as you edit files. `npm test` runs the annotation-parser tests.
+The dev server reloads as you edit files. `npm test` runs the markdown-plugin tests (annotations, story links, heading ids, score tables).
 
 ## Where things go
 
@@ -26,6 +26,10 @@ The dev server reloads as you edit files. `npm test` runs the annotation-parser 
 ```
 
 Tags starting with `+` are green, the rest red. Brackets can be escaped or not. The comment can't contain `[word:`.
+
+## Score tables
+
+Leave the score cells in the writeup's tables blank — they're filled at build time from the `Metric: N` lines under each `### Model` heading, and shaded 1–2 red, 3–4 orange, 5–6 yellow. The bold line before a table (e.g. `**Hermione in Slytherin:**`) must match a `##` heading, columns must match the `###` headings, and rows must match the metric names. Scores after a `Full:` line fill the `Final - …` rows; `Overall score: N` fills `Final - overall`.
 
 ## Deploying
 
