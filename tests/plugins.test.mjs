@@ -81,3 +81,33 @@ test('h3 ids are prefixed with their h2 section', () => {
   assert.deepEqual(tree.children.map((n) => n.data.hProperties.id),
     ['the-stories', 'tris-at-lightsbridge', 'tris-at-lightsbridge-sonnet', 'discussion']);
 });
+
+test('shades score cells by band', async () => {
+  const { scoreShade } = await import('../src/plugins/remark-score-shading.mjs');
+  assert.deepEqual([1, 2, 3, 4, 5, 6].map((n) => scoreShade(String(n))), ['red', 'red', 'orange', 'orange', 'yellow', 'yellow']);
+  assert.equal(scoreShade(' 4 '), 'orange');
+  assert.equal(scoreShade('Prose'), null);
+  assert.equal(scoreShade('7'), null);
+});
+
+test('score tables are filled from the per-story scores', async () => {
+  const { fromMarkdown } = await import('mdast-util-from-markdown');
+  const { gfmTable } = await import('micromark-extension-gfm-table');
+  const { gfmTableFromMarkdown } = await import('mdast-util-gfm-table');
+  const { default: remarkScoreTable } = await import('../src/plugins/remark-score-table.mjs');
+  const md = [
+    '## Hermione in Slytherin', '### Sonnet', 'First chapter:  \nProse: 2', 'Full:  \nCharacter/plot: 5', 'Overall score: 6',
+    '### Opus', 'Prose: 3', 'Overall score: 1',
+    '## Discussion', '**Hermione in Slytherin:**',
+    '| Metric | Sonnet | Opus |\n| :-- | :-- | :-- |\n| Prose | 9 | 9 |\n| Final \\- character/plot | 9 | 9 |\n| Final \\- overall | 9 | 9 |',
+  ].join('\n\n');
+  const tree = fromMarkdown(md, { extensions: [gfmTable()], mdastExtensions: [gfmTableFromMarkdown()] });
+  remarkScoreTable()(tree);
+  const cells = (n) => n.children.map((c) => (c.children[0]?.value ?? ''));
+  const table = tree.children.find((n) => n.type === 'table');
+  assert.deepEqual(table.children.slice(1).map(cells), [
+    ['Prose', '2', '3'],
+    ['Final - character/plot', '5', '9'],
+    ['Final - overall', '6', '1'],
+  ]);
+});

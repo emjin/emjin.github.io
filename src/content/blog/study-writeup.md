@@ -192,7 +192,7 @@ Character/plot: 4
 
 * I actually ended up liking the plot and character journey of the full story. The central mechanic of the story is that Hermione collects information meticulously about her classmates, which Tracey turns into a formal homework-for-information (or favors) operation. I found this acceptably plausible, as the information she collected could be used to reinforce her position, and I liked that Hermione came to understand that not all information should be weaponized. This helped soften her character. My favorite part of the story was the development of Hermione’s friendship with Harry through the Chamber of Secrets investigation. When she learns Harry visited her every week while she was paralyzed, she’s touched, one of the few moments when we really see Hermione’s need for friendship. There’s also a sense that Hermione’s information-collecting has always been in preparation for the coming conflict, and I liked the weight it lent Hermione’s work. Even more because, when the war comes to Hogwarts and she “calls in” their debts, it’s clear that Slytherin stays to fight because of the respect they have for her. These events together created the bones of a satisfying arc. However, everything happened too simply to be believable. I needed to see a lot more happen to believe that Hermione won the respect of people who were so prejudiced against her.
 
-Full: 3
+Overall score: 3
 
 * Because the plot improved, I liked the full thing more than the first chapter (despite the fact that “load-bearing” was used 4 times). However, as I indicated, the story didn’t successfully take me on an emotional journey. Aside from Hermione’s second-year friendship with Harry, none of her character development is earned. Hermione doesn’t have to make a mistake to realize that some pieces of information should be kept sacred, she just realizes it. Hermione earns the respect and loyalty of most of her House without much difficulty, largely just by showing her academic prowess. We do see how she wins over some key people, like Pansy by not telling on her after the troll, but for the most part they just feel too easy compared to the prejudice Hermione was working against. Theodore Nott’s first mention is when he stays and fights even though his father is on the other side “in a silver mask”. The closest is Draco, who Hermione wins over by helping with the Vanishing Cabinet and spiriting his mother away, but there isn’t enough time spent developing their rapport. Ultimately, the problem is that nothing goes wrong for more than a paragraph for Hermione. While there are other things worth mentioning, like an over-reliance on framing devices for progression or an over-use of the word “arithmetic”, the most important thing is the lack of real conflict.
 
@@ -346,29 +346,29 @@ All together, here were the scores:
 
 | Metric | Sonnet | Opus | Fable |
 | :---- | :---- | :---- | :---- |
-| Would read more | 6 | 5 | 2 |
-| Prose | 1 | 3 | 4 |
-| Continuity | 4 | 1 | 3 |
-| Character/plot | 5 | 3 | 1 |
-| Continuity with canon | 3 | 2 | 3 |
-| Character recognizability | 6 | 6 | 4 |
-| Execution of the prompt | 3 | 2 | 2 |
-| Final \- character/plot | 5 | 1 | 4 |
-| Final \- overall | 4 | 2 | 3 |
+| Would read more |  |  |  |
+| Prose |  |  |  |
+| Continuity |  |  |  |
+| Character/plot |  |  |  |
+| Continuity with canon |  |  |  |
+| Character recognizability |  |  |  |
+| Execution of the prompt |  |  |  |
+| Final \- character/plot |  |  |  |
+| Final \- overall |  |  |  |
 
 **Tris at Lightsbridge:**
 
 | Metric | Sonnet | Opus | Fable |
 | :---- | :---- | :---- | :---- |
-| Would read more | 2 | 5 | 3 |
-| Prose | 1 | 3 | 4 |
-| Continuity | 4 | 4 | 2 |
-| Character/plot | 3 | 4 | 2 |
-| Continuity with canon | 1 | 2 | 2 |
-| Character recognizability | 2 | 2 | 3 |
-| Execution of the prompt | 3 | 3 | 4 |
-| Final \- character/plot | 3 | 1 | 3 |
-| Final \- overall | 3 | 2 | 3 |
+| Would read more |  |  |  |
+| Prose |  |  |  |
+| Continuity |  |  |  |
+| Character/plot |  |  |  |
+| Continuity with canon |  |  |  |
+| Character recognizability |  |  |  |
+| Execution of the prompt |  |  |  |
+| Final \- character/plot |  |  |  |
+| Final \- overall |  |  |  |
 
 ## Conclusions
 

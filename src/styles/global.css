@@ -115,3 +115,6 @@ html { scroll-behavior: smooth; }
 .prose code { font-size: 0.9em; }
 .prose table { border-collapse: collapse; font-family: var(--sans); font-size: 0.9rem; }
 .prose th, .prose td { border-bottom: 1px solid var(--rule); padding: 0.4rem 0.75rem; text-align: left; }
+.prose td.score-red { background: #fbd3d0; }
+.prose td.score-orange { background: #fde0bf; }
+.prose td.score-yellow { background: #fcf2b5; }
