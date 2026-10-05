@@ -14,7 +14,7 @@ The dev server reloads as you edit files. `npm test` runs the markdown-plugin te
 
 ## Where things go
 
-- `src/content/blog/` — blog posts (markdown). Keep the frontmatter block (`title`, `date`) at the top. Replace `study-writeup.md` with your writeup.
+- `src/content/blog/` — blog posts (markdown). Keep the frontmatter block (`title`, `date`) at the top.
 - `src/content/stories/` — annotated stories. Filename becomes the URL: `my-story.md` → `/stories/my-story`. Use lowercase-and-hyphens filenames. A `title:` frontmatter line is optional.
 - In the writeup, link to a story with its filename: `[My story](my-story.md)`.
 - `src/annotations.config.mjs` — tag → label and box colour. Edit this when you send me (or decide) your mappings.

@@ -136,7 +136,7 @@ She was, by the second week, spending a great deal of time in the library, which
 
 "Doing what wrong?"
 
-"Slytherin." Daphne turned a page. "**You're trying to win them over by being unbearably right about things in front of an audience. That works on professors. It does not work on eleven-year-olds \[canon-char: this absolutely rings true for how Hermione’s personality would be received\]** who've been raised since birth to believe that people who talk like you talk are — the word my mother uses is *strident* — showing off doesn't make people like you here. It makes people wary of you. Which, actually," she added, with the air of someone conceding a point she found mildly annoying to concede, "might be more useful to you than being liked. But you should know which one you're getting."
+"Slytherin." Daphne turned a page. "**You're trying to win them over by being unbearably right about things in front of an audience. That works on professors. It does not work on eleven-year-olds \[+canon-char: this absolutely rings true for how Hermione’s personality would be received\]** who've been raised since birth to believe that people who talk like you talk are — the word my mother uses is *strident* — showing off doesn't make people like you here. It makes people wary of you. Which, actually," she added, with the air of someone conceding a point she found mildly annoying to concede, "might be more useful to you than being liked. But you should know which one you're getting."
 
 Hermione considered this with the seriousness it deserved. "What would you suggest instead?"
 

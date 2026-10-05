@@ -25,7 +25,7 @@ personal-website/
 │   │       └── [slug].astro    # Renders annotated stories
 │   ├── content/
 │   │   ├── blog/
-│   │   │   └── study-writeup.md      # your main document
+│   │   │   └── claude-fanfic-writeup.md      # your main document
 │   │   └── stories/
 │   │       ├── story-1.md            # annotated stories
 │   │       └── ...
@@ -51,7 +51,7 @@ personal-website/
 ### Blog (`/blog`)
 - Simple list of posts (title + date). One entry for now; adding posts later = dropping a new `.md` file into `src/content/blog/`.
 
-### Main writeup (`/blog/study-writeup`)
+### Main writeup (`/blog/claude-fanfic-writeup`)
 - Rendered from your markdown file as-is.
 - Links to stories in your markdown should point to `/stories/<slug>` — either write them that way, or a small remark plugin rewrites relative links (e.g. `story-1.md` → `/stories/story-1`).
 
