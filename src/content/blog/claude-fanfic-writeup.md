@@ -20,7 +20,7 @@ I compared Claude’s Fable 5, Opus 4.8, and Sonnet 5 models for writing fanfic,
 
 The full prompts are reproduced later.
 
-My initial prompt for each asked for a plot summary and a first chapter. Opus 4.8 was the only model to ask me clarifying questions; to minimize the extra prompting it got, I answered “You pick”. After reading all the outputs, I asked each model for the second chapter of the Harry time travel fanfic, because the first chapters didn’t spend enough time with the main premise. Then I asked all the models for full versions of the fanfic. 
+My initial prompt for each asked for a plot summary and a first chapter. Opus 4.8 was the only model to ask me clarifying questions; to minimize the extra prompting it got, I answered “You pick”. After reading all the outputs, I asked each model for full versions of the fanfic. 
 
 When grading, I went prompt by prompt. I first read the chapter 1 produced by each model casually and scored based on how much I would want to keep reading. I then went back and reread the chapter 1 closely, grading for writing quality and merit as fanfic. Finally, I read the full fanfics and regraded according to the final execution. I didn’t use the plot summaries when grading, since I wouldn’t have them for a real fanfic — they were just generated as a sanity check.
 
